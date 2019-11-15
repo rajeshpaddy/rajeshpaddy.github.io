@@ -2,22 +2,30 @@
 <head>
     <script src="https://github.com/mauriciosantos/Buckets-JS/releases/download/v1.98.2/buckets.min.js" ></script>
     <script src="js/datastructure.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>   
-        <select name="datastructures" id="ds" >
-            <option value="Stack">Stack</option>
-            <option value="Queue">Queue</option>
-        </select>
-        <br>
-        <input id="names" width="100"/>
-        <button type="button"  onclick="pushMe()">Push</button>
-        <button type="button" onclick="popMe()">Pop</button>
-        <button type="button"  onclick="queueMe()">Queue</button>
-        <button type="button" onclick="dequeueMe()">Dequeue</button>
-        <ul id="listitems-stack">
+    <div class="form-group">   
+        
+        <div class="input-group mb-3">
+                <input id="names" class="form-control"/>
+            <select name="datastructures" id="ds" class="form-control">
+                        <option value="Stack">Stack</option>
+                        <option value="Queue">Queue</option>
+                    </select>
+            
+        </div>
+            <button class="btn btn-dark" type="button"  onclick="pushMe()">Push</button>
+            <button class="btn btn-dark" type="button" onclick="popMe()">Pop</button>
+            <button class="btn btn-dark" type="button"  onclick="queueMe()">Queue</button>
+            <button class="btn btn-dark" type="button" onclick="dequeueMe()">Dequeue</button>
+        
+        <ul id="listitems-stack" class="list-group">
         </ul>
-        <ul id="listitems-queue">
+        <ul id="listitems-queue" class="list-group">
         </ul>
     </div>
 </body>
